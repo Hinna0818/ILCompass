@@ -1,0 +1,61 @@
+{
+  "version": "core_v1_2026-10-14",
+  "cluster_labels": {
+    "BM:0": "NK_ILC1_like",
+    "BM:1": "T_like",
+    "BM:2": "BM_ILC2_supported_background",
+    "BM:3": "BM_ILC2_supported_background",
+    "BM:4": "B_like",
+    "BM:5": "BM_ILC_maturation_review",
+    "BM:6": "NK_T_like",
+    "BM:7": "Myeloid_like",
+    "Lung:0": "ILC2_supported",
+    "Lung:1": "ILC2_supported",
+    "Lung:2": "ILC2_supported",
+    "Lung:3": "Endothelial_like",
+    "Lung:4": "Endothelial_like",
+    "Lung:5": "ILC2_ILCP_like_maturation_review",
+    "Skin:0": "ILC2_supported",
+    "Skin:1": "ILC2_supported",
+    "Skin:2": "ILC2_supported",
+    "Skin:3": "ILC2_supported",
+    "Skin:4": "ILC2_supported",
+    "Skin:5": "ILC2_supported",
+    "Skin:6": "Stromal_like",
+    "Skin:7": "Endothelial_like",
+    "Gut:0": "ILC2_supported",
+    "Gut:1": "ILC2_supported",
+    "Gut:2": "ILC2_supported",
+    "Gut:3": "ILC2_supported",
+    "Gut:4": "ILC2_supported",
+    "Gut:5": "ILC2_supported",
+    "Gut:6": "Stromal_like",
+    "Gut:7": "B_plasma_like",
+    "Fat:0": "ILC2_supported",
+    "Fat:1": "ILC2_supported",
+    "Fat:2": "ILC2_supported",
+    "Fat:3": "ILC2_supported",
+    "Fat:4": "ILC2_supported",
+    "Fat:5": "ILC2_supported"
+  },
+  "scrublet_thresholds": {
+    "GSM3303970": 0.25,
+    "GSM3303971": 0.25,
+    "GSM3303972": 0.25,
+    "GSM3303973": 0.25,
+    "GSM3303974": 0.25
+  },
+  "scrublet_review": "Simulated distributions lack clearly separated modes; BM automatic threshold failed and peripheral automatic thresholds >0.45 fall in extreme tails. For strict training core use >0.25 as an explicit exploratory score-tail review flag, not validated doublet calls. Report 0.20/0.25/0.30 sensitivity; true capture-level rates/pool mapping unknown.",
+  "cluster_rationale": {
+    "Lung:5": "High Rora/Il7r/Icos plus Il18r1(85%), Tcf7(52%), Cd7(70%) and relatively lower mature ST2/IL2RA/KLRG1: maturation identity ambiguous, not declared contamination; deferred in strict core. Skin IL18R1/Ccr6 states retained because tissue-specific programs differ.",
+    "non_ILC2": "Consistent cluster-level CD3, Ncr1/cytotoxic, CD79, Cldn5/Pecam1 or collagen/Dcn programs and weaker ILC2 evidence; exact evidence in cluster_marker_evidence.tsv and GSM top_markers.tsv.",
+    "BM": "Separate developmental background; not all BM cells called precursors. No BM in mature peripheral core v1.",
+    "ILC2": "Coherent Gata3/Rora/Il7r/Id2/Bcl11b and supporting receptor/effector genes, absence of coherent alternative lineage. Cell-level coexpression and weak evidence are reviewed separately."
+  },
+  "sources": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7062532/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6202223/",
+    "https://www.sc-best-practices.org/cellular-structure/annotation/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6625319/"
+  ]
+}

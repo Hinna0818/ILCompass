@@ -1,0 +1,572 @@
+{
+  "series_overall_design": "8-14 week old ILC2 reporter mice were used to sort steady-state activated ILC2 from bone marrow, lung, visceral adipose tissue, small intestine lamina propia and skin.",
+  "samples": {
+    "GSM3303970": {
+      "!Sample_title": [
+        "BM-ILC2"
+      ],
+      "!Sample_geo_accession": [
+        "GSM3303970"
+      ],
+      "!Sample_status": [
+        "Public on Sep 10 2018"
+      ],
+      "!Sample_submission_date": [
+        "Jul 23 2018"
+      ],
+      "!Sample_last_update_date": [
+        "Sep 11 2018"
+      ],
+      "!Sample_type": [
+        "SRA"
+      ],
+      "!Sample_channel_count": [
+        "1"
+      ],
+      "!Sample_source_name_ch1": [
+        "Bone marrow ILC2"
+      ],
+      "!Sample_organism_ch1": [
+        "Mus musculus"
+      ],
+      "!Sample_taxid_ch1": [
+        "10090"
+      ],
+      "!Sample_characteristics_ch1": [
+        "strain: C57BL/6",
+        "tissue: Bone marrow"
+      ],
+      "!Sample_treatment_protocol_ch1": [
+        "Il5(Red5), Arg1(Yarg), and Il13(Smart13) reporter alleles on wild-type C57BL/6 background were used to prepare single cell suspensions from bone marrow (BM), lung, adipose tissue (fat), and small intestinal lamina propria (gut) as previously described (von Moltke J et al, Nature 2016; Van Dyken SJ et al, Immunity 2014; Molofsky AB et al, J. Exp Med 2013). For skin single cell suspensions, pooled ear/back or back tissue was minced in RPMI-1640 with 10% FBS, then transferred to C tubes (Miltenyi Biotec), containing 5ml of RPMI-1640 supplemented with Collagenase XI (2mg/ml; Sigma C9407), Hyaluronidase (0.5mg/ml; Sigma H3506), and DNAse I (0.1mg/ml; Sigma 10104159001).  Samples were shaken at 200-250 rpm for 90min at 37\u00a1 C, then dispersed using an automated tissue dissociator (GentleMACS; Miltenyi Biotec) running program C.  Single-cell suspensions were passed through a 70um filter and washed twice with RPMI containing 10% FBS. Cells were sorted as Lin-CD45+Red5+ for Lung, Gut, Skin and Fat. For BM, ILC2s were sorted as Lin-CD45+Yarg+."
+      ],
+      "!Sample_molecule_ch1": [
+        "total RNA"
+      ],
+      "!Sample_extract_protocol_ch1": [
+        "We use the ChromiumTM Single Cell 3 Reagent Kits v2 per the manufacturer instructions."
+      ],
+      "!Sample_data_processing": [
+        "10x data for scRNA samples are run through cellranger software to produce the fastqfiles.",
+        "The fastq files are processed throgh the cellranger count to get differential expression counts.",
+        "Genome_build: The data is aligned to mm10 genome",
+        "Supplementary_files_format_and_content: The processed data files are cellranger count matrix files."
+      ],
+      "!Sample_platform_id": [
+        "GPL21103"
+      ],
+      "!Sample_contact_name": [
+        "Roberto,,Ricardo-Gonzalez"
+      ],
+      "!Sample_contact_email": [
+        "Roberto.Ricardo-Gonzalez@ucsf.edu"
+      ],
+      "!Sample_contact_laboratory": [
+        "Ricardo-Gonzalez Lab"
+      ],
+      "!Sample_contact_institute": [
+        "University of California San Francisco"
+      ],
+      "!Sample_contact_address": [
+        "513 Parnassus Ave, HSE-1001"
+      ],
+      "!Sample_contact_city": [
+        "San Francisco"
+      ],
+      "!Sample_contact_state": [
+        "CA"
+      ],
+      "!Sample_contact_zip/postal_code": [
+        "94143"
+      ],
+      "!Sample_contact_country": [
+        "USA"
+      ],
+      "!Sample_instrument_model": [
+        "Illumina HiSeq 4000"
+      ],
+      "!Sample_library_selection": [
+        "cDNA"
+      ],
+      "!Sample_library_source": [
+        "transcriptomic"
+      ],
+      "!Sample_library_strategy": [
+        "RNA-Seq"
+      ],
+      "!Sample_relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN09708089",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX4451141"
+      ],
+      "!Sample_supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3303nnn/GSM3303970/suppl/GSM3303970_BAM_barcodes.tsv.gz"
+      ],
+      "!Sample_supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3303nnn/GSM3303970/suppl/GSM3303970_BAM_genes.tsv.gz"
+      ],
+      "!Sample_supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3303nnn/GSM3303970/suppl/GSM3303970_BAM_matrix.mtx.gz"
+      ],
+      "!Sample_series_id": [
+        "GSE117567",
+        "GSE117568"
+      ],
+      "!Sample_data_row_count": [
+        "0"
+      ]
+    },
+    "GSM3303971": {
+      "!Sample_title": [
+        "Lung-ILC2"
+      ],
+      "!Sample_geo_accession": [
+        "GSM3303971"
+      ],
+      "!Sample_status": [
+        "Public on Sep 10 2018"
+      ],
+      "!Sample_submission_date": [
+        "Jul 23 2018"
+      ],
+      "!Sample_last_update_date": [
+        "Sep 11 2018"
+      ],
+      "!Sample_type": [
+        "SRA"
+      ],
+      "!Sample_channel_count": [
+        "1"
+      ],
+      "!Sample_source_name_ch1": [
+        "Lung ILC2"
+      ],
+      "!Sample_organism_ch1": [
+        "Mus musculus"
+      ],
+      "!Sample_taxid_ch1": [
+        "10090"
+      ],
+      "!Sample_characteristics_ch1": [
+        "strain: C57BL/6",
+        "tissue: Lung"
+      ],
+      "!Sample_treatment_protocol_ch1": [
+        "Il5(Red5), Arg1(Yarg), and Il13(Smart13) reporter alleles on wild-type C57BL/6 background were used to prepare single cell suspensions from bone marrow (BM), lung, adipose tissue (fat), and small intestinal lamina propria (gut) as previously described (von Moltke J et al, Nature 2016; Van Dyken SJ et al, Immunity 2014; Molofsky AB et al, J. Exp Med 2013). For skin single cell suspensions, pooled ear/back or back tissue was minced in RPMI-1640 with 10% FBS, then transferred to C tubes (Miltenyi Biotec), containing 5ml of RPMI-1640 supplemented with Collagenase XI (2mg/ml; Sigma C9407), Hyaluronidase (0.5mg/ml; Sigma H3506), and DNAse I (0.1mg/ml; Sigma 10104159001).  Samples were shaken at 200-250 rpm for 90min at 37\u00a1 C, then dispersed using an automated tissue dissociator (GentleMACS; Miltenyi Biotec) running program C.  Single-cell suspensions were passed through a 70um filter and washed twice with RPMI containing 10% FBS. Cells were sorted as Lin-CD45+Red5+ for Lung, Gut, Skin and Fat. For BM, ILC2s were sorted as Lin-CD45+Yarg+."
+      ],
+      "!Sample_molecule_ch1": [
+        "total RNA"
+      ],
+      "!Sample_extract_protocol_ch1": [
+        "We use the ChromiumTM Single Cell 3 Reagent Kits v2 per the manufacturer instructions."
+      ],
+      "!Sample_data_processing": [
+        "10x data for scRNA samples are run through cellranger software to produce the fastqfiles.",
+        "The fastq files are processed throgh the cellranger count to get differential expression counts.",
+        "Genome_build: The data is aligned to mm10 genome",
+        "Supplementary_files_format_and_content: The processed data files are cellranger count matrix files."
+      ],
+      "!Sample_platform_id": [
+        "GPL21103"
+      ],
+      "!Sample_contact_name": [
+        "Roberto,,Ricardo-Gonzalez"
+      ],
+      "!Sample_contact_email": [
+        "Roberto.Ricardo-Gonzalez@ucsf.edu"
+      ],
+      "!Sample_contact_laboratory": [
+        "Ricardo-Gonzalez Lab"
+      ],
+      "!Sample_contact_institute": [
+        "University of California San Francisco"
+      ],
+      "!Sample_contact_address": [
+        "513 Parnassus Ave, HSE-1001"
+      ],
+      "!Sample_contact_city": [
+        "San Francisco"
+      ],
+      "!Sample_contact_state": [
+        "CA"
+      ],
+      "!Sample_contact_zip/postal_code": [
+        "94143"
+      ],
+      "!Sample_contact_country": [
+        "USA"
+      ],
+      "!Sample_instrument_model": [
+        "Illumina HiSeq 4000"
+      ],
+      "!Sample_library_selection": [
+        "cDNA"
+      ],
+      "!Sample_library_source": [
+        "transcriptomic"
+      ],
+      "!Sample_library_strategy": [
+        "RNA-Seq"
+      ],
+      "!Sample_relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN09708088",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX4451142"
+      ],
+      "!Sample_supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3303nnn/GSM3303971/suppl/GSM3303971_Adult_Lung_barcodes.tsv.gz"
+      ],
+      "!Sample_supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3303nnn/GSM3303971/suppl/GSM3303971_Adult_Lung_genes.tsv.gz"
+      ],
+      "!Sample_supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3303nnn/GSM3303971/suppl/GSM3303971_Adult_Lung_matrix.mtx.gz"
+      ],
+      "!Sample_series_id": [
+        "GSE117567",
+        "GSE117568"
+      ],
+      "!Sample_data_row_count": [
+        "0"
+      ]
+    },
+    "GSM3303972": {
+      "!Sample_title": [
+        "Skin-ILC2"
+      ],
+      "!Sample_geo_accession": [
+        "GSM3303972"
+      ],
+      "!Sample_status": [
+        "Public on Sep 10 2018"
+      ],
+      "!Sample_submission_date": [
+        "Jul 23 2018"
+      ],
+      "!Sample_last_update_date": [
+        "Sep 11 2018"
+      ],
+      "!Sample_type": [
+        "SRA"
+      ],
+      "!Sample_channel_count": [
+        "1"
+      ],
+      "!Sample_source_name_ch1": [
+        "Skin ILC2"
+      ],
+      "!Sample_organism_ch1": [
+        "Mus musculus"
+      ],
+      "!Sample_taxid_ch1": [
+        "10090"
+      ],
+      "!Sample_characteristics_ch1": [
+        "strain: C57BL/6",
+        "tissue: Skin"
+      ],
+      "!Sample_treatment_protocol_ch1": [
+        "Il5(Red5), Arg1(Yarg), and Il13(Smart13) reporter alleles on wild-type C57BL/6 background were used to prepare single cell suspensions from bone marrow (BM), lung, adipose tissue (fat), and small intestinal lamina propria (gut) as previously described (von Moltke J et al, Nature 2016; Van Dyken SJ et al, Immunity 2014; Molofsky AB et al, J. Exp Med 2013). For skin single cell suspensions, pooled ear/back or back tissue was minced in RPMI-1640 with 10% FBS, then transferred to C tubes (Miltenyi Biotec), containing 5ml of RPMI-1640 supplemented with Collagenase XI (2mg/ml; Sigma C9407), Hyaluronidase (0.5mg/ml; Sigma H3506), and DNAse I (0.1mg/ml; Sigma 10104159001).  Samples were shaken at 200-250 rpm for 90min at 37\u00a1 C, then dispersed using an automated tissue dissociator (GentleMACS; Miltenyi Biotec) running program C.  Single-cell suspensions were passed through a 70um filter and washed twice with RPMI containing 10% FBS. Cells were sorted as Lin-CD45+Red5+ for Lung, Gut, Skin and Fat. For BM, ILC2s were sorted as Lin-CD45+Yarg+."
+      ],
+      "!Sample_molecule_ch1": [
+        "total RNA"
+      ],
+      "!Sample_extract_protocol_ch1": [
+        "We use the ChromiumTM Single Cell 3 Reagent Kits v2 per the manufacturer instructions."
+      ],
+      "!Sample_data_processing": [
+        "10x data for scRNA samples are run through cellranger software to produce the fastqfiles.",
+        "The fastq files are processed throgh the cellranger count to get differential expression counts.",
+        "Genome_build: The data is aligned to mm10 genome",
+        "Supplementary_files_format_and_content: The processed data files are cellranger count matrix files."
+      ],
+      "!Sample_platform_id": [
+        "GPL21103"
+      ],
+      "!Sample_contact_name": [
+        "Roberto,,Ricardo-Gonzalez"
+      ],
+      "!Sample_contact_email": [
+        "Roberto.Ricardo-Gonzalez@ucsf.edu"
+      ],
+      "!Sample_contact_laboratory": [
+        "Ricardo-Gonzalez Lab"
+      ],
+      "!Sample_contact_institute": [
+        "University of California San Francisco"
+      ],
+      "!Sample_contact_address": [
+        "513 Parnassus Ave, HSE-1001"
+      ],
+      "!Sample_contact_city": [
+        "San Francisco"
+      ],
+      "!Sample_contact_state": [
+        "CA"
+      ],
+      "!Sample_contact_zip/postal_code": [
+        "94143"
+      ],
+      "!Sample_contact_country": [
+        "USA"
+      ],
+      "!Sample_instrument_model": [
+        "Illumina HiSeq 4000"
+      ],
+      "!Sample_library_selection": [
+        "cDNA"
+      ],
+      "!Sample_library_source": [
+        "transcriptomic"
+      ],
+      "!Sample_library_strategy": [
+        "RNA-Seq"
+      ],
+      "!Sample_relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN09708087",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX4451143"
+      ],
+      "!Sample_supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3303nnn/GSM3303972/suppl/GSM3303972_Adult_skin_barcodes.tsv.gz"
+      ],
+      "!Sample_supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3303nnn/GSM3303972/suppl/GSM3303972_Adult_skin_genes.tsv.gz"
+      ],
+      "!Sample_supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3303nnn/GSM3303972/suppl/GSM3303972_Adult_skin_matrix.mtx.gz"
+      ],
+      "!Sample_series_id": [
+        "GSE117567",
+        "GSE117568"
+      ],
+      "!Sample_data_row_count": [
+        "0"
+      ]
+    },
+    "GSM3303973": {
+      "!Sample_title": [
+        "Gut-ILC2"
+      ],
+      "!Sample_geo_accession": [
+        "GSM3303973"
+      ],
+      "!Sample_status": [
+        "Public on Sep 10 2018"
+      ],
+      "!Sample_submission_date": [
+        "Jul 23 2018"
+      ],
+      "!Sample_last_update_date": [
+        "Sep 11 2018"
+      ],
+      "!Sample_type": [
+        "SRA"
+      ],
+      "!Sample_channel_count": [
+        "1"
+      ],
+      "!Sample_source_name_ch1": [
+        "Gut ILC2"
+      ],
+      "!Sample_organism_ch1": [
+        "Mus musculus"
+      ],
+      "!Sample_taxid_ch1": [
+        "10090"
+      ],
+      "!Sample_characteristics_ch1": [
+        "strain: C57BL/6",
+        "tissue: Small intestine lamina propia"
+      ],
+      "!Sample_treatment_protocol_ch1": [
+        "Il5(Red5), Arg1(Yarg), and Il13(Smart13) reporter alleles on wild-type C57BL/6 background were used to prepare single cell suspensions from bone marrow (BM), lung, adipose tissue (fat), and small intestinal lamina propria (gut) as previously described (von Moltke J et al, Nature 2016; Van Dyken SJ et al, Immunity 2014; Molofsky AB et al, J. Exp Med 2013). For skin single cell suspensions, pooled ear/back or back tissue was minced in RPMI-1640 with 10% FBS, then transferred to C tubes (Miltenyi Biotec), containing 5ml of RPMI-1640 supplemented with Collagenase XI (2mg/ml; Sigma C9407), Hyaluronidase (0.5mg/ml; Sigma H3506), and DNAse I (0.1mg/ml; Sigma 10104159001).  Samples were shaken at 200-250 rpm for 90min at 37\u00a1 C, then dispersed using an automated tissue dissociator (GentleMACS; Miltenyi Biotec) running program C.  Single-cell suspensions were passed through a 70um filter and washed twice with RPMI containing 10% FBS. Cells were sorted as Lin-CD45+Red5+ for Lung, Gut, Skin and Fat. For BM, ILC2s were sorted as Lin-CD45+Yarg+."
+      ],
+      "!Sample_molecule_ch1": [
+        "total RNA"
+      ],
+      "!Sample_extract_protocol_ch1": [
+        "We use the ChromiumTM Single Cell 3 Reagent Kits v2 per the manufacturer instructions."
+      ],
+      "!Sample_data_processing": [
+        "10x data for scRNA samples are run through cellranger software to produce the fastqfiles.",
+        "The fastq files are processed throgh the cellranger count to get differential expression counts.",
+        "Genome_build: The data is aligned to mm10 genome",
+        "Supplementary_files_format_and_content: The processed data files are cellranger count matrix files."
+      ],
+      "!Sample_platform_id": [
+        "GPL21103"
+      ],
+      "!Sample_contact_name": [
+        "Roberto,,Ricardo-Gonzalez"
+      ],
+      "!Sample_contact_email": [
+        "Roberto.Ricardo-Gonzalez@ucsf.edu"
+      ],
+      "!Sample_contact_laboratory": [
+        "Ricardo-Gonzalez Lab"
+      ],
+      "!Sample_contact_institute": [
+        "University of California San Francisco"
+      ],
+      "!Sample_contact_address": [
+        "513 Parnassus Ave, HSE-1001"
+      ],
+      "!Sample_contact_city": [
+        "San Francisco"
+      ],
+      "!Sample_contact_state": [
+        "CA"
+      ],
+      "!Sample_contact_zip/postal_code": [
+        "94143"
+      ],
+      "!Sample_contact_country": [
+        "USA"
+      ],
+      "!Sample_instrument_model": [
+        "Illumina HiSeq 4000"
+      ],
+      "!Sample_library_selection": [
+        "cDNA"
+      ],
+      "!Sample_library_source": [
+        "transcriptomic"
+      ],
+      "!Sample_library_strategy": [
+        "RNA-Seq"
+      ],
+      "!Sample_relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN09708086",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX4451144"
+      ],
+      "!Sample_supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3303nnn/GSM3303973/suppl/GSM3303973_Adult_gut_barcodes.tsv.gz"
+      ],
+      "!Sample_supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3303nnn/GSM3303973/suppl/GSM3303973_Adult_gut_genes.tsv.gz"
+      ],
+      "!Sample_supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3303nnn/GSM3303973/suppl/GSM3303973_Adult_gut_matrix.mtx.gz"
+      ],
+      "!Sample_series_id": [
+        "GSE117567",
+        "GSE117568"
+      ],
+      "!Sample_data_row_count": [
+        "0"
+      ]
+    },
+    "GSM3303974": {
+      "!Sample_title": [
+        "Fat-ILC2"
+      ],
+      "!Sample_geo_accession": [
+        "GSM3303974"
+      ],
+      "!Sample_status": [
+        "Public on Sep 10 2018"
+      ],
+      "!Sample_submission_date": [
+        "Jul 23 2018"
+      ],
+      "!Sample_last_update_date": [
+        "Sep 11 2018"
+      ],
+      "!Sample_type": [
+        "SRA"
+      ],
+      "!Sample_channel_count": [
+        "1"
+      ],
+      "!Sample_source_name_ch1": [
+        "Fat ILC2"
+      ],
+      "!Sample_organism_ch1": [
+        "Mus musculus"
+      ],
+      "!Sample_taxid_ch1": [
+        "10090"
+      ],
+      "!Sample_characteristics_ch1": [
+        "strain: C57BL/6",
+        "tissue: Visceral adipose tissue"
+      ],
+      "!Sample_treatment_protocol_ch1": [
+        "Il5(Red5), Arg1(Yarg), and Il13(Smart13) reporter alleles on wild-type C57BL/6 background were used to prepare single cell suspensions from bone marrow (BM), lung, adipose tissue (fat), and small intestinal lamina propria (gut) as previously described (von Moltke J et al, Nature 2016; Van Dyken SJ et al, Immunity 2014; Molofsky AB et al, J. Exp Med 2013). For skin single cell suspensions, pooled ear/back or back tissue was minced in RPMI-1640 with 10% FBS, then transferred to C tubes (Miltenyi Biotec), containing 5ml of RPMI-1640 supplemented with Collagenase XI (2mg/ml; Sigma C9407), Hyaluronidase (0.5mg/ml; Sigma H3506), and DNAse I (0.1mg/ml; Sigma 10104159001).  Samples were shaken at 200-250 rpm for 90min at 37\u00a1 C, then dispersed using an automated tissue dissociator (GentleMACS; Miltenyi Biotec) running program C.  Single-cell suspensions were passed through a 70um filter and washed twice with RPMI containing 10% FBS. Cells were sorted as Lin-CD45+Red5+ for Lung, Gut, Skin and Fat. For BM, ILC2s were sorted as Lin-CD45+Yarg+."
+      ],
+      "!Sample_molecule_ch1": [
+        "total RNA"
+      ],
+      "!Sample_extract_protocol_ch1": [
+        "We use the ChromiumTM Single Cell 3 Reagent Kits v2 per the manufacturer instructions."
+      ],
+      "!Sample_data_processing": [
+        "10x data for scRNA samples are run through cellranger software to produce the fastqfiles.",
+        "The fastq files are processed throgh the cellranger count to get differential expression counts.",
+        "Genome_build: The data is aligned to mm10 genome",
+        "Supplementary_files_format_and_content: The processed data files are cellranger count matrix files."
+      ],
+      "!Sample_platform_id": [
+        "GPL21103"
+      ],
+      "!Sample_contact_name": [
+        "Roberto,,Ricardo-Gonzalez"
+      ],
+      "!Sample_contact_email": [
+        "Roberto.Ricardo-Gonzalez@ucsf.edu"
+      ],
+      "!Sample_contact_laboratory": [
+        "Ricardo-Gonzalez Lab"
+      ],
+      "!Sample_contact_institute": [
+        "University of California San Francisco"
+      ],
+      "!Sample_contact_address": [
+        "513 Parnassus Ave, HSE-1001"
+      ],
+      "!Sample_contact_city": [
+        "San Francisco"
+      ],
+      "!Sample_contact_state": [
+        "CA"
+      ],
+      "!Sample_contact_zip/postal_code": [
+        "94143"
+      ],
+      "!Sample_contact_country": [
+        "USA"
+      ],
+      "!Sample_instrument_model": [
+        "Illumina HiSeq 4000"
+      ],
+      "!Sample_library_selection": [
+        "cDNA"
+      ],
+      "!Sample_library_source": [
+        "transcriptomic"
+      ],
+      "!Sample_library_strategy": [
+        "RNA-Seq"
+      ],
+      "!Sample_relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN09708085",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX4451145"
+      ],
+      "!Sample_supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3303nnn/GSM3303974/suppl/GSM3303974_FAT_barcodes.tsv.gz"
+      ],
+      "!Sample_supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3303nnn/GSM3303974/suppl/GSM3303974_FAT_genes.tsv.gz"
+      ],
+      "!Sample_supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3303nnn/GSM3303974/suppl/GSM3303974_FAT_matrix.mtx.gz"
+      ],
+      "!Sample_series_id": [
+        "GSE117567",
+        "GSE117568"
+      ],
+      "!Sample_data_row_count": [
+        "0"
+      ]
+    }
+  },
+  "source_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE117nnn/GSE117567/soft/GSE117567_family.soft.gz",
+  "sha256": "c321ad6cda035efd47a8c3765cf02edf325e1548a331775f141372688605e1ac"
+}

@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-14",
+  "moves": [
+    {
+      "old_path": "ILC2_model/src/qc_gse117567.py",
+      "new_path": "ILC2_model/main/qc_gse117567.py",
+      "old_sha256": "b415d76f7de90a9fafb23774f1c416a111f4e8e9b0e0db31a25c22c066bb61ca",
+      "new_sha256": "ee509d0d44e5fa05b98817ee0b32a2cff01f57475647620dd82ccf619d7dff41",
+      "path_edits": {
+        "src/qc_gse117567.py": "main/qc_gse117567.py"
+      }
+    },
+    {
+      "old_path": "ILC2_model/src/build_train_gse117567.py",
+      "new_path": "ILC2_model/main/build_train_gse117567.py",
+      "old_sha256": "5d1cd2544a497e9515bf4e28329340ca1957d10799425452bd83f6e49b6c91f2",
+      "new_sha256": "5d1cd2544a497e9515bf4e28329340ca1957d10799425452bd83f6e49b6c91f2",
+      "path_edits": {}
+    },
+    {
+      "old_path": "ILC2_rotation_proposal/GSE117567_initial_inspection/inspect_counts.py",
+      "new_path": "ILC2_model/main/archive/inspect_counts.py",
+      "old_sha256": "911e7ce92197fa6fdc216644a3fdd721df8c5ff621b258dbd2031451956b25be",
+      "new_sha256": "a6df717c64731c9aa3212d17b15d6d7f451a8754ae185f57fc55de5b83c79941",
+      "path_edits": {
+        "OUT = Path(__file__).resolve().parent": "PROJECT = Path(__file__).resolve().parents[2]\nOUT = PROJECT.parent / \"ILC2_rotation_proposal/GSE117567_initial_inspection\"",
+        "SRC = Path('/Users/hinna/Desktop/downloads/GSE117567_RAW')": "SRC = PROJECT / 'data/GSE117567_RAW'"
+      }
+    },
+    {
+      "old_path": "ILC2_rotation_proposal/scbasecount_audit/prepare_workbook_inputs.py",
+      "new_path": "ILC2_model/main/archive/prepare_workbook_inputs.py",
+      "old_sha256": "b0b48a2058a38b249c18328a217185ea0520464b36a5939acd36a264e4d492b9",
+      "new_sha256": "64498437228413ce98153c5091d939aa826a5aa4b3bec7dcebb08a2b5bcd01f5",
+      "path_edits": {
+        "root = Path(__file__).resolve().parent": "root = Path(__file__).resolve().parents[2].parent / \"ILC2_rotation_proposal/scbasecount_audit\""
+      }
+    },
+    {
+      "old_path": "ILC2_rotation_proposal/environment/check_environment.py",
+      "new_path": "ILC2_model/main/archive/check_environment.py",
+      "old_sha256": "afe7b7b507899792567be44336b105b0c850b4d8e8fd451f2d806febe90ce840",
+      "new_sha256": "c0d5f9c399f4faf56d05ce3d9458f2c0fa2c85102037e82ccca4dde478ac66f9",
+      "path_edits": {
+        "HERE = Path(__file__).resolve().parent": "PROJECT = Path(__file__).resolve().parents[2]\nHERE = PROJECT.parent / \"ILC2_rotation_proposal/environment\"",
+        "data = Path('/Users/hinna/Desktop/downloads/GSE117567_RAW')": "data = PROJECT / 'data/GSE117567_RAW'"
+      }
+    },
+    {
+      "old_path": "ILC2_model/notebooks/traindata_qc.ipynb",
+      "new_path": "ILC2_model/main/traindata_qc.ipynb",
+      "old_sha256": "e012357a53107ff37e3d001c5c12f7c0ab4494b40e818c0e039e508ec0528801",
+      "new_sha256": "6f7d0ed4d97f1001bf9190e9609b1de655430e77b5810737346c134ec5cca9fa"
+    }
+  ],
+  "outputs_moved": false,
+  "raw_or_train_data_modified": false,
+  "historical_hash_note": "Original provenance hashes remain historical run hashes; this file records paths and modified path hashes."
+}

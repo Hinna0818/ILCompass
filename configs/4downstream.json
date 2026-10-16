@@ -1,0 +1,12 @@
+{
+  "status": "design_only_not_executed",
+  "model_path": null,
+  "data_manifest": "data/metadata/sample_manifest.tsv",
+  "task_priority": ["representation_evaluation", "in_silico_gene_deletion", "supervised_perturbation_if_data_available", "matched_pseudobulk_bulk_validation"],
+  "in_silico_deletion_is_validated_KO_prediction": false,
+  "baselines": ["original_GeneCompass", "PCA", "no_change", "mean_response", "ridge", "single_perturbation_additive_if_available"],
+  "primary_metrics": ["delta_error", "response_direction", "predefined_gene_programs", "independent_sample_performance"],
+  "test_study_is_locked": true,
+  "output_root": "results",
+  "random_seed": 0
+}

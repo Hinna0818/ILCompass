@@ -1,0 +1,145 @@
+# ============================================================
+# ILC2_model .gitignore
+# 原则：提交代码、配置、样本级 metadata、报告与小型汇总；
+# 原始/处理后矩阵、逐细胞大表、模型权重、第三方源码、密钥一律不提交。
+# 下载来源与 SHA256 记录在 data/metadata/ 与 results/*/provenance.json。
+# ============================================================
+
+# ---------- OS / 编辑器 ----------
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.code-workspace
+~$*
+.~*
+
+# ---------- Python / 环境 ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+.conda/
+
+# ---------- R ----------
+.Rhistory
+.RData
+.Rproj.user/
+*.rds
+*.RData
+*.rda
+
+# ---------- 私密信息与本地设置 ----------
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.netrc
+.netrc
+credentials*.json
+secrets*
+*token*.txt
+.huggingface/
+.claude/settings.local.json
+configs/*.local.json
+configs/local/
+
+# ---------- 日志与实验追踪 ----------
+*.log
+wandb/
+mlruns/
+lightning_logs/
+runs/
+tensorboard/
+outputs/
+nohup.out
+slurm-*.out
+
+# ---------- 单细胞 / 测序 / 大矩阵 ----------
+*.h5ad
+*.h5
+*.hdf5
+*.loom
+*.zarr/
+*.mtx
+*.mtx.gz
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bai
+*.cram
+*.sra
+*.bw
+*.bigwig
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.gz
+*.arrow
+*.parquet
+*.feather
+*.npy
+*.npz
+*.mat
+
+# ---------- 模型 / token 资产 ----------
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.onnx
+*.pickle
+*.pkl
+*.joblib
+checkpoints/
+
+# ---------- 目录级规则（保留 README / .gitkeep） ----------
+/external/*
+!/external/README.md
+
+/data/*_RAW/
+/data/raw/*
+!/data/raw/README.md
+/data/processed/*
+!/data/processed/README.md
+/data/prepared/*
+!/data/prepared/README.md
+/data/references/*
+!/data/references/README.md
+
+# model/ 下权重由上方扩展名规则排除；config、超参数、来源/hash、日志等小文件保留可提交
+/model/**/checkpoint-*/
+
+# ---------- results：只提交报告、小型汇总与图 ----------
+/results/**/predictions/
+/results/**/cell_embeddings*
+/results/**/gene_embeddings*
+/results/**/cell_metadata.tsv
+# 可由 GTF 重新生成的全基因注释表
+/results/**/ensembl_gene_annotation.tsv
+/results/**/ensembl_biotype_core_genes.tsv
+# 外部 API 原始响应（大、可由脚本重新抓取）
+/results/tables/dataset_search/cxg_datasets.json
+
+# ---------- 个人工作记录 ----------
+/docs/task_plan.md

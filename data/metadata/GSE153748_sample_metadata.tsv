@@ -1,0 +1,6 @@
+sample_id	tissue	source_batch	sex	age_weeks	condition	pool_size_reported	input_file	source_url
+GSM4653701	BM	batch_2	male	6	steady_state	10	data/GSE153748_RAW/GSM4653701_BM.tar.gz	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM4653701
+GSM4653702	LI	batch_1	male	6	steady_state	10	data/GSE153748_RAW/GSM4653702_LI.tar.gz	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM4653702
+GSM4653703	Lung	batch_1	male	6	steady_state	10	data/GSE153748_RAW/GSM4653703_lung.tar.gz	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM4653703
+GSM4653704	Pancreas	batch_2	male	6	steady_state	10	data/GSE153748_RAW/GSM4653704_pancreas.tar.gz	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM4653704
+GSM4653705	SI	batch_1	male	6	steady_state	10	data/GSE153748_RAW/GSM4653705_SI.tar.gz	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM4653705

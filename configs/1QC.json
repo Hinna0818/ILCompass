@@ -1,0 +1,60 @@
+{
+  "status": "basic_qc_implemented_identity_pending",
+  "preset": "genecompass_paper_based_corrected_v1",
+  "sample_manifest": "data/metadata/sample_manifest.tsv",
+  "basic_qc": {
+    "min_detected_genes": 200,
+    "min_cells_per_sample": 4,
+    "min_detected_protein_coding_or_miRNA": 7,
+    "max_mt_pct_inclusive": 15,
+    "n_genes_upper_sd": 3,
+    "sd_ddof": 0,
+    "sd_reference": "sample_nonempty_cells_before_basic_qc",
+    "metrics_gene_space": "original_all_gene_counts"
+  },
+  "core_genes": {
+    "allowed_biotypes": [
+      "protein_coding",
+      "lncRNA",
+      "miRNA"
+    ],
+    "ensembl_annotation": "data/references/Mus_musculus.GRCm38.84.gtf.gz",
+    "ensembl_release": 84,
+    "core_gene_list": null,
+    "require_verified_reference": true,
+    "genome_build": "GRCm38/mm10",
+    "species": "Mouse",
+    "annotation_url": "https://ftp.ensembl.org/pub/release-84/gtf/mus_musculus/Mus_musculus.GRCm38.84.gtf.gz"
+  },
+  "identity": {
+    "preset": "ilc2_balanced_v1",
+    "scope": "mouse_full_transcriptome_ILC2_enriched_sorted_libraries",
+    "min_candidate_UMI": 500,
+    "min_core_markers": 1,
+    "min_total_identity_support_markers": 2,
+    "min_alternative_markers": 2,
+    "min_alternative_UMI": 5,
+    "acinar_min_markers": 3,
+    "acinar_min_UMI_fraction": 0.05,
+    "scrublet_expected_rate": 0.05,
+    "scrublet_review_threshold": 0.25,
+    "scrublet_high_score_action": "flag_only_unless_corroborated_by_lineage_evidence",
+    "mixed_cluster_review_fraction": 0.20,
+    "mixed_cluster_action": "flag_only_no_cluster_veto",
+    "main_training_tier": "balanced_peripheral_ILC2",
+    "review_BM_separately": true,
+    "doublet_detection_by_sample": true,
+    "exclude_single_marker_only": false
+  },
+  "validation": {
+    "primary_same_basic_qc": true,
+    "require_high_confidence_identity": true,
+    "strict_subset_enabled": false,
+    "example_strict_min_genes": 500,
+    "example_strict_max_mt_pct_inclusive": 10,
+    "report_retention_by_tissue_condition": true
+  },
+  "output_root": "data/processed",
+  "random_seed": 0,
+  "report_root": "results/GSE117567_basic_qc"
+}

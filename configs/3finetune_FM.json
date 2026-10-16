@@ -1,0 +1,20 @@
+{
+  "status": "design_only_not_executed",
+  "checkpoint_path": null,
+  "checkpoint_configuration": null,
+  "prior_knowledge_path": null,
+  "prepared_dataset_path": null,
+  "model_size_first_trial": "Small",
+  "initialize_from_pretrained": true,
+  "objective": "masked_gene_ID_and_expression_recovery",
+  "masked_fraction_initial": 0.15,
+  "finetune_strategy_initial": "freeze_most_parameters_update_last_layers",
+  "trainable_last_layers_initial": 1,
+  "learning_rate": null,
+  "warmup_steps": null,
+  "max_epochs": null,
+  "require_original_model_baseline": true,
+  "require_real_checkpoint_smoke_test": true,
+  "output_root": "model/posttrained",
+  "random_seed": 0
+}

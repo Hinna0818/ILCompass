@@ -1,0 +1,17 @@
+{
+  "status": "design_only_not_executed",
+  "input_root": "data/processed",
+  "sample_manifest": "data/metadata/sample_manifest.tsv",
+  "split_unit": "study_or_independent_biological_sample",
+  "roles": ["posttrain_train", "posttrain_val", "representation_test", "downstream_train", "downstream_val", "downstream_test", "excluded"],
+  "holdout_complete_test_study_including_control": true,
+  "checkpoint_token_dictionary": null,
+  "checkpoint_gene_median_reference": null,
+  "checkpoint_homolog_mapping": null,
+  "normalization": "must_match_selected_checkpoint",
+  "max_gene_tokens": 2048,
+  "mouse_species_id": 1,
+  "sample_balance": "review_tissue_and_sample_counts_before_training",
+  "output_root": "data/prepared",
+  "random_seed": 0
+}

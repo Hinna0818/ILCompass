@@ -1,0 +1,13 @@
+name: ilc2_model
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.10.22
+  - pip
+  - pip:
+      - -r requirements-lock.txt
+variables:
+  PYTHONNOUSERSITE: "1"
+  NUMBA_CACHE_DIR: /private/tmp/ilc2_model_numba
+  MPLCONFIGDIR: /private/tmp/ilc2_model_mpl
