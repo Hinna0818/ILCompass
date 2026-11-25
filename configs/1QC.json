@@ -26,6 +26,80 @@
     "species": "Mouse",
     "annotation_url": "https://ftp.ensembl.org/pub/release-84/gtf/mus_musculus/Mus_musculus.GRCm38.84.gtf.gz"
   },
+  "dataset_overrides": {
+    "GSE279338": {
+      "ensembl_annotation": "data/references/Mus_musculus.GRCm38.98.gtf.gz",
+      "ensembl_release": 98,
+      "genome_build": "GRCm38/mm10",
+      "reason": "Both downloaded RNA H5 files declare mm10/cellranger-6.0.1; release98 covers all 32285 input GEX IDs. Selected QC annotation, not independently confirmed author annotation release. No threshold changes."
+    },
+    "GSE218353": {
+      "ensembl_annotation": "data/references/Mus_musculus.GRCm38.98.gtf.gz",
+      "ensembl_release": 98,
+      "genome_build": "GRCm38/mm10",
+      "reason": "GEO reports mm10/Cell Ranger 6.1.1; release 98 covers all 32285 raw Gene Expression IDs. RNA and 8 antibody features are separated. Selected QC annotation, not verified author annotation release. No threshold changes."
+    },
+    "GSE301975": {
+      "ensembl_annotation": "data/references/gencode.vM33.primary_assembly.annotation.gtf.gz",
+      "ensembl_release": 110,
+      "gencode_release": "M33",
+      "genome_build": "GRCm39",
+      "annotation_url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M33/gencode.vM33.primary_assembly.annotation.gtf.gz",
+      "reason": "Actual H5 declares GRCm39/cellranger-9.0.0, contradicting GEO mm10/7.0 fields. GENCODE M33 covers all 33696 input IDs; GRCm38 release 98 misses 1633. QC annotation selected from actual inputs; author reference package/release not independently verified. No threshold overrides."
+    },
+    "GSE301976": {
+      "ensembl_annotation": "data/references/Mus_musculus.GRCm38.98.gtf.gz",
+      "ensembl_release": 98,
+      "genome_build": "GRCm38/mm10",
+      "annotation_url": "https://ftp.ensembl.org/pub/release-98/gtf/mus_musculus/Mus_musculus.GRCm38.98.gtf.gz",
+      "reason": "Input H5 mm10 IDs: release 84 misses 3495 of 32285 genes; release 98 covers all. Selected QC annotation, not a verified author annotation release. No threshold overrides."
+    },
+    "GSE299900": {
+      "ensembl_annotation": "data/references/gencode.vM33.primary_assembly.annotation.gtf.gz",
+      "ensembl_release": 110,
+      "gencode_release": "M33",
+      "genome_build": "GRCm39",
+      "cellranger_reference": "GRCm39-2024-A",
+      "annotation_url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M33/gencode.vM33.primary_assembly.annotation.gtf.gz",
+      "reason": "GENCODE M33 primary-assembly GTF is the annotation source in the official 10x GRCm39-2024-A build. No threshold overrides."
+    },
+    "GSE248385": {
+      "ensembl_annotation": "data/references/Mus_musculus.GRCm38.98.gtf.gz",
+      "ensembl_release": 98,
+      "annotation_url": "https://ftp.ensembl.org/pub/release-98/gtf/mus_musculus/Mus_musculus.GRCm38.98.gtf.gz",
+      "reason": "GRCm38.p6 input; release 84 lacks 3495 feature IDs. Release 98 is the selected QC annotation, not a verified author annotation release. No threshold overrides."
+    },
+    "GSE189285": {
+      "ensembl_annotation": "data/references/Mus_musculus.GRCm38.98.gtf.gz",
+      "ensembl_release": 98,
+      "genome_build": "GRCm38/mm10",
+      "reason": "Published mm10 10x features: release 98 covers all 32285 IDs; release 84 misses 3495. Selected QC annotation, not a verified author release. No threshold overrides."
+    },
+    "GSE316969": {
+      "ensembl_annotation": "data/references/gencode.vM33.primary_assembly.annotation.gtf.gz",
+      "genome_build": "GRCm39",
+      "gencode_release": "M33",
+      "reason": "GRCm39 33696 input features; annotation coverage checked by QC script. Selected QC annotation, not confirmation of author reference release. No threshold changes."
+    },
+    "GSE272724": {
+      "ensembl_annotation": "data/references/Mus_musculus.GRCm38.98.gtf.gz",
+      "genome_build": "GRCm38/mm10",
+      "ensembl_release": 98,
+      "reason": "GEO reports mm10/Cell Ranger 6.1.1; full input ID coverage checked at runtime. Selected QC annotation, not verified author annotation release. No threshold changes."
+    },
+    "GSE245964": {
+      "ensembl_annotation": "data/references/Mus_musculus.GRCm38.98.gtf.gz",
+      "ensembl_release": 98,
+      "genome_build": "GRCm38/mm10",
+      "reason": "GEO reports mm10/Cell Ranger 7.0.0. Selected QC annotation; full GEX ID coverage checked at runtime, not confirmation of author release. No threshold changes. Author final lung ILC2 scope only."
+    },
+    "OMIX009712": {
+      "ensembl_annotation": "data/references/Mus_musculus.GRCm38.98.gtf.gz",
+      "ensembl_release": 98,
+      "genome_build": "GRCm38/mm10",
+      "reason": "Paper specifies mm10; release98 covers all 32285 released features. Selected QC annotation, not independently confirmed author annotation release. No threshold changes."
+    }
+  },
   "identity": {
     "preset": "ilc2_balanced_v1",
     "scope": "mouse_full_transcriptome_ILC2_enriched_sorted_libraries",
@@ -39,7 +113,7 @@
     "scrublet_expected_rate": 0.05,
     "scrublet_review_threshold": 0.25,
     "scrublet_high_score_action": "flag_only_unless_corroborated_by_lineage_evidence",
-    "mixed_cluster_review_fraction": 0.20,
+    "mixed_cluster_review_fraction": 0.2,
     "mixed_cluster_action": "flag_only_no_cluster_veto",
     "main_training_tier": "balanced_peripheral_ILC2",
     "review_BM_separately": true,

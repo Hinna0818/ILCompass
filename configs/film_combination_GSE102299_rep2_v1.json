@@ -1,0 +1,53 @@
+{
+  "source": "data/processed/GSE102299_qc/GSE102299_ILC2.h5ad",
+  "pretraining_manifest": "scratch/data/prepared/ilc2_scratch_v3/split_manifest.tsv.gz",
+  "functional_genes": "results/ILC2_tissue_gene_exposure_v1/functional_gene_sets.csv",
+  "data_directory": "data/processed/GSE102299_FiLM_combination_rep2_v1",
+  "result_directory": "results/GSE102299_FiLM_combination_rep2_v1",
+  "split_seed": 42,
+  "validation_fraction": 0.2,
+  "seeds": [
+    0
+  ],
+  "model": {
+    "condition_dim": 32,
+    "hidden_dim": 128,
+    "projection_dim": 256,
+    "stimuli": [
+      "IL25",
+      "NMU"
+    ]
+  },
+  "epochs": 100,
+  "minimum_epochs": 20,
+  "patience": 15,
+  "batch_size": 64,
+  "prediction_batch_size": 128,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.01,
+  "gradient_clip": 5.0,
+  "variance_loss_weight": 0.1,
+  "shift_loss_weight": 0.01,
+  "minimum_expression_scale": 0.1,
+  "cpu_threads": 4,
+  "pca_training_cells": 5000,
+  "pca_dimensions": 50,
+  "sliced_directions": 128,
+  "distribution_cells": 512,
+  "distribution_seeds": [
+    100,
+    101,
+    102,
+    103,
+    104
+  ],
+  "kl_minimum_positives": 20,
+  "kl_alpha": 0.5,
+  "control_validation_fraction": 0.15,
+  "control_test_fraction": 0.15,
+  "feature_directory": "scratch/data/downstream/IL33_cross_study_scratch_v3_seed0",
+  "checkpoint": "scratch/results/ilc2_scratch_v3/E3_8L384_MLM_seed0/best.pt",
+  "combination": "IL25_NMU",
+  "workflow_script": "src/downstream/drugpred/train_film_GSE102299.py",
+  "within_replicate": "2"
+}

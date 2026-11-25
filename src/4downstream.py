@@ -1,12 +1,21 @@
-"""阶段 4：表征评价、in silico 基因删除与有监督扰动任务。
-
-设计骨架；基因删除的表征偏移不等于真实 KO 表达预测。
-"""
+"""Run an ILCompass perturbation analysis from its existing task entry point."""
 import argparse
+import os
+from pathlib import Path
+import sys
+
+
+ROOT = Path(__file__).resolve().parents[1]
+TASKS = {
+    "cytokine": "src/downstream/drugpred/train_combination_representation_3seeds.py",
+    "gene-ko": "compare_pretrain/model_compare/gene_ko/compare_models.py",
+    "screen-il13": "compare_pretrain/model_compare/crispr_il13/direction_eval/run.py",
+    "screen-gata3": "compare_pretrain/model_compare/crispr_gata3/direction_eval/run.py",
+}
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--config", default="configs/4downstream.json", help="预留配置路径；尚未执行")
-    parser.parse_args()
-    parser.error("阶段 4 尚未实现；监督预测需独立的匹配 control/perturbation 数据，详见 CLAUDE.md。")
+    parser = argparse.ArgumentParser(description=__doc__, epilog="Use TASK --help for task-specific arguments.")
+    parser.add_argument("task", choices=TASKS)
+    task = parser.parse_args(sys.argv[1:2]).task
+    os.execv(sys.executable, [sys.executable, str(ROOT / TASKS[task]), *sys.argv[2:]])

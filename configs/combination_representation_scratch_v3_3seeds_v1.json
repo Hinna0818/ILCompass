@@ -1,0 +1,24 @@
+{
+  "data_directory": "data/processed/Combination_with_scratch_v3_3seeds_v1",
+  "result_directory": "results/Combination_with_scratch_v3_3seeds_v1",
+  "gc_config": "configs/genecompass_combination_zero_shot_v1.json",
+  "fewshot_configs": {
+    "GSE136154": "configs/film_combination_fewshot_GSE136154_v1.json",
+    "GSE102299": "configs/film_combination_fewshot_GSE102299_v1.json"
+  },
+  "experiments": {
+    "GSE136154_C": {"dataset": "GSE136154", "source": "C"},
+    "GSE136154_D": {"dataset": "GSE136154", "source": "D"},
+    "GSE102299_rep1": {"dataset": "GSE102299", "source": "1"},
+    "GSE102299_rep2": {"dataset": "GSE102299", "source": "2"}
+  },
+  "models": ["ExpressionMLP", "PCA", "GeneCompass", "LoRA", "Scratch_v3"],
+  "scratch_checkpoint": "scratch/results/ilc2_scratch_v3/E3_8L384_MLM_seed0/best.pt",
+  "seeds": [0, 1, 2],
+  "fractions": [0.0, 0.05],
+  "pca_dimensions": 768,
+  "pca_seed": 42,
+  "legacy_expression_zero": "configs/representation_benchmark_GSE102299_00pct_v1.json",
+  "legacy_expression_five": "configs/representation_benchmark_GSE102299_05pct_v1.json",
+  "cpu_threads": 4
+}

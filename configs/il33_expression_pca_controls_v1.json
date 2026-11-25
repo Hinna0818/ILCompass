@@ -1,0 +1,23 @@
+{
+  "data_directory": "data/processed/IL33_expression_PCA_controls_v1",
+  "result_directory": "results/IL33_expression_PCA_controls_v1",
+  "model_directory": "model/downstream/IL33_expression_PCA_controls_v1",
+  "seeds": [0, 1, 2],
+  "pca_dimensions": 768,
+  "pca_seed": 42,
+  "minimum_expression_scale": 0.1,
+  "sources": {
+    "mixed": "data/processed/IL33_mixed_cell_delta_v1",
+    "crossstudy": "data/processed/IL33_external_delta_v1",
+    "lung_liver": "data/processed/GSE189285_IL33_bidirectional_delta_v1/lung_to_liver"
+  },
+  "cd_config": "configs/drugpred_il33_lung_tissue.json",
+  "lora_lung_data": "data/processed/ILC2_LoRA_IL33_v1/lung_liver",
+  "lora_lung_results": "results/ILC2_LoRA_IL33_v1/lung_liver",
+  "adaptation_config": "scratch/configs/il33_liver_fewshot_v3_seed0.json",
+  "adaptation_split": "data/processed/ILC2_LoRA_IL33_v1/fewshot/split_manifest.tsv.gz",
+  "adaptation_fractions": [0.05, 0.1],
+  "historical_metrics": "results/ILC2_LoRA_IL33_v1/analysis/metrics_by_seed.csv",
+  "functional_genes": "results/ILC2_tissue_gene_exposure_v1/functional_gene_sets.csv",
+  "cpu_threads": 4
+}

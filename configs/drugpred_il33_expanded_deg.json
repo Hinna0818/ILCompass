@@ -1,0 +1,25 @@
+{
+  "data_directory": "data/processed/IL33_response_compare_v2",
+  "result_directory": "results/IL33_response_compare_v2",
+  "source_pool": "src/downstream/drugpred/downstream_data/IL33_expanded_v1",
+  "gene_panel": "data/processed/GSE136154_IL33_PBS_overlap_v1/genes.tsv",
+  "models": {
+    "GeneCompass": "model/pretrained/GeneCompass_base",
+    "ILC2_official": "model/posttrained/base_last1_20261022_official_0.8_0.2",
+    "ILC2_tissue": "model/posttrained/base_last1_20261028_tissue_norm_045_010_045"
+  },
+  "group_weights": {"GSE136154_C": 0.5, "GSE102299_rep1": 0.25, "GSE102299_rep2": 0.25},
+  "loss_variants": ["all", "adaptive_de"],
+  "epochs": 15,
+  "seeds": [0, 1, 2],
+  "batch_size": 64,
+  "hidden_size": 128,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.01,
+  "variance_loss_weight": 0.1,
+  "residual_penalty": 0.01,
+  "minimum_expression_scale": 0.1,
+  "gradient_clip": 5.0,
+  "deg_k": 20,
+  "cpu_threads": 4
+}

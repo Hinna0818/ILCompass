@@ -1,0 +1,37 @@
+{
+  "experiment": "E3_8L384_MLM_seed0",
+  "input_config": "scratch/configs/input_pipeline_v3.json",
+  "output": "scratch/results/ilc2_scratch_v3/E3_8L384_MLM_seed0",
+  "training_acceptance": "scratch/results/ilc2_scratch_v3/training_acceptance/validation.json",
+  "seed": 0,
+  "model": {
+    "max_length": 8192,
+    "hidden_size": 384,
+    "num_layers": 8,
+    "num_heads": 6,
+    "intermediate_size": 1536,
+    "dropout": 0.1,
+    "layer_norm_eps": 1e-05,
+    "initializer_std": 0.02,
+    "norm_type": "pre_ln"
+  },
+  "epochs": 30,
+  "accumulation_steps": 8,
+  "learning_rate": 0.0002,
+  "min_learning_rate": 1e-06,
+  "weight_decay": 0.01,
+  "adam_betas": [
+    0.9,
+    0.999
+  ],
+  "adam_eps": 1e-08,
+  "warmup_fraction": 0.05,
+  "gradient_clip": 1.0,
+  "id_loss_weight": 0.2,
+  "value_loss_weight": 0.8,
+  "precision": "bf16",
+  "early_stopping_patience": 5,
+  "checkpoint_every_steps": 100,
+  "log_every_steps": 25,
+  "cpu_threads": 4
+}

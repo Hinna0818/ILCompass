@@ -1,0 +1,23 @@
+{
+  "version": "IL33_scratch_v3_3seeds_v1",
+  "data_directory": "data/processed/IL33_scratch_v3_3seeds_v1",
+  "result_directory": "results/IL33_scratch_v3_3seeds_v1",
+  "model_directory": "model/downstream/IL33_scratch_v3_3seeds_v1",
+  "checkpoint": "scratch/results/ilc2_scratch_v3/E3_8L384_MLM_seed0/best.pt",
+  "seeds": [0, 1, 2],
+  "include_scratch": true,
+  "comparison_results": "results/IL33_expression_PCA_controls_v1",
+  "mixed_source": "data/processed/IL33_mixed_cell_delta_v1",
+  "crossstudy_source": "scratch/data/downstream/IL33_cross_study_scratch_v3_seed0",
+  "lung_liver_source": "scratch/data/downstream/GSE189285_IL33_lung_to_liver_scratch_v3_seed0",
+  "cd_source": "scratch/data/downstream/GSE136154_C_to_D_scratch_v3_seed0",
+  "cd_results": "scratch/results/GSE136154_C_to_D_scratch_v3_seed0",
+  "cd_config": "configs/drugpred_il33_lung_tissue.json",
+  "adaptation_data": "scratch/data/downstream/GSE189285_IL33_liver_fewshot_v3_seed0",
+  "adaptation_results": "scratch/results/GSE189285_IL33_liver_fewshot_v3_seed0",
+  "adaptation_config": "scratch/configs/il33_liver_fewshot_v3_seed0.json",
+  "adaptation_split": "data/processed/ILC2_LoRA_IL33_v1/fewshot/split_manifest.tsv.gz",
+  "adaptation_fractions": [0.05, 0.1],
+  "functional_genes": "results/ILC2_tissue_gene_exposure_v1/functional_gene_sets.csv",
+  "cpu_threads": 4
+}

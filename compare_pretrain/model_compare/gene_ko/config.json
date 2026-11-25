@@ -1,0 +1,15 @@
+{
+  "source": "data/processed/GSE279338_qc/GSE279338_ILC2.h5ad",
+  "target": "ENSMUSG00000014444",
+  "symbol": "Piezo1",
+  "model": "lora",
+  "reference": "data/references/mouse_gene_median.pickle",
+  "max_length": 2048,
+  "batch_size": 4,
+  "fractions": [1.0, 0.5, 0.25, 0.0],
+  "random_deletions": 3,
+  "random_rank_window": 50,
+  "seed": 0,
+  "pairing_seeds": [0, 1, 2],
+  "output": "compare_pretrain/model_compare/gene_ko/results/GSE279338_Piezo1_lora"
+}

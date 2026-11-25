@@ -1,0 +1,16 @@
+{
+  "reference_directory": "compare_pretrain/model_compare/crispr_il13",
+  "coverage_directory": "results/GSE126924_IL13_TF_coverage_v1",
+  "output_directory": "compare_pretrain/model_compare/crispr_il13/design_v1",
+  "report_directory": "results/GSE262028_IL13_insilico_design_v1",
+  "models": ["raw", "lora"],
+  "expected_targets": 229,
+  "random_seed": 0,
+  "random_deletions_per_target_cell": 3,
+  "random_rank_window": 50,
+  "minimum_guides_each_screen": 2,
+  "minimum_joint_cells": 100,
+  "target_expression_fraction": 0.0,
+  "readout_symbol": "Il13",
+  "max_length": 2048
+}

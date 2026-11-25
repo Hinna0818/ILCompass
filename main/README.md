@@ -55,3 +55,9 @@
 输入是QC和身份筛选后的25,010细胞，四个组织，无骨髓。每万UMI归一化→log1p→2500 HVG→30 PCA→15近邻→UMAP（seed=0、min_dist=0.5）；不做batch correction。每组织仅一个来源文库，组织与文库效应混杂，UMAP距离/分群不能直接当作功能差异或独立重复证据。
 
 训练h5ad不改动；`GSE117567_umap_hvg.h5ad`只是HVG可视化对象，X为log归一化值、counts层为所选HVG的原始UMI，不能替换模型输入。图、坐标、HVG表、参数与源文件hash同目录保存。
+
+## 模型与扰动分析脚本
+
+- `build_mouse_gene_median.py` 生成 GeneCompass 小鼠表达中位数代理及映射来源表。
+- `plot_combination_representation_3seeds.py` 绘制联合刺激实验的分来源、分种子指标。
+- `plot_il33_expression_pca_controls.py` 汇总 IL-33 表达模型及 PCA 对照结果。

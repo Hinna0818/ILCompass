@@ -1,0 +1,8 @@
+{
+  "reference_benchmark_config": "configs/representation_benchmark_GSE102299_05pct_v1.json",
+  "replicates": ["1", "2"],
+  "seeds": [0, 1, 2],
+  "fraction": 0.0,
+  "data_directory": "data/processed/GSE102299_rep12_00pct_representation_benchmark_v1",
+  "result_directory": "results/GSE102299_rep12_00pct_representation_benchmark_v1"
+}

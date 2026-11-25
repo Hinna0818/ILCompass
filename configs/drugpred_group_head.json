@@ -1,0 +1,15 @@
+{
+  "source_run": "results/GSE136154_drugpred/official_E0_cvae_seed0",
+  "result_directory": "results/GSE136154_drugpred/official_E0_group_head_controls",
+  "seeds": [0, 1, 2],
+  "cpu_threads": 4,
+  "group_size": 128,
+  "hidden_size": 64,
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "max_steps": 5000,
+  "validation_every": 500,
+  "patience": 4,
+  "gradient_clip": 10.0,
+  "log_every": 500
+}

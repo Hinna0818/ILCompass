@@ -1,0 +1,36 @@
+{
+  "version": "IL33_mixed_cell_delta_v1",
+  "data_directory": "data/processed/IL33_mixed_cell_delta_v1",
+  "result_directory": "results/IL33_mixed_cell_delta_v1",
+  "model_directory": "model/downstream/IL33_mixed_cell_delta_v1",
+  "encoder_cache": "data/processed/IL33_response_compare_v2",
+  "sources": {
+    "GSE136154": "data/downstream_data/GSE136154_qc/GSE136154_ILC2.h5ad",
+    "GSE102299": "src/downstream/drugpred/downstream_data/GSE102299/qc/GSE102299_ILC2.h5ad"
+  },
+  "functional_gene_sets": "results/ILC2_tissue_gene_exposure_v1/functional_gene_sets.csv",
+  "tokenization_config": "configs/2prepare_traindata.json",
+  "models": {
+    "GeneCompass": "model/pretrained/GeneCompass_base",
+    "ILC2_tissue": "model/posttrained/base_last1_20261028_tissue_norm_045_010_045"
+  },
+  "backgrounds": ["GSE136154_C", "GSE136154_D", "GSE102299_rep1", "GSE102299_rep2"],
+  "split_fractions": [0.675, 0.075, 0.25],
+  "split_seed": 42,
+  "minimum_train_detection": 0.01,
+  "seeds": [0, 1, 2],
+  "hidden_size": 128,
+  "batch_size": 128,
+  "prediction_batch_size": 128,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "gradient_clip": 5.0,
+  "max_epochs": 200,
+  "min_epochs": 30,
+  "early_stop_patience": 25,
+  "minimum_relative_improvement": 0.0001,
+  "lr_patience": 8,
+  "lr_factor": 0.5,
+  "minimum_learning_rate": 0.000001,
+  "cpu_threads": 4
+}

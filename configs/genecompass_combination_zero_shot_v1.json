@@ -1,0 +1,17 @@
+{
+  "data_directory": "data/processed/GeneCompass_combination_zero_shot_v1",
+  "result_directory": "results/GeneCompass_combination_zero_shot_v1",
+  "experiments": {
+    "GSE136154_C": "configs/film_combination_GSE136154_C_v1.json",
+    "GSE136154_D": "configs/film_combination_GSE136154_D_v1.json",
+    "GSE102299_rep1": "configs/film_combination_GSE102299_rep1_v1.json",
+    "GSE102299_rep2": "configs/film_combination_GSE102299_rep2_v1.json"
+  },
+  "models": {
+    "GeneCompass": "model/pretrained/GeneCompass_base/pytorch_model.bin",
+    "GeneCompass_LoRA": "results/ILC2_GeneCompass_LoRA_v1/r8_seed0/best.pt"
+  },
+  "raw_cache": "data/processed/IL33_response_compare_v2",
+  "lora_cache": "data/processed/ILC2_LoRA_IL33_v1/features",
+  "lora_config": "compare_pretrain/genepass_lora/config.json"
+}

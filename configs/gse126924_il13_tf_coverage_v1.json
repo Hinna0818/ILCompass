@@ -1,0 +1,14 @@
+{
+  "source": "data/processed/GSE126924_qc/GSE126924_Lung_ILC2.h5ad",
+  "reference_directory": "compare_pretrain/model_compare/crispr_il13",
+  "screen_directory": "data/processed/GSE262028_screen_inputs_v1",
+  "lora_config": "compare_pretrain/genepass_lora/config.json",
+  "output": "results/GSE126924_IL13_TF_coverage_v1",
+  "expected_cells": 1864,
+  "readout_symbol": "Il13",
+  "candidate_thresholds": {
+    "minimum_guides_author50_each_screen": 2,
+    "primary_joint_cells": 100,
+    "exploratory_joint_cells": 30
+  }
+}

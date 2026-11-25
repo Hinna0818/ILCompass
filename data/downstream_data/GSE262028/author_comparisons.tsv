@@ -1,0 +1,9 @@
+screen	endpoint	bin	count_column	author_library_filename	counts_file
+S17	Il13_reporter	N	pool.4	S17_linn.fq.fastq.lib.output	GSE262028_S17_lib_data.csv.gz
+S17	Il13_reporter	P	pool.6	S17_tomp.fq.fastq.lib.output	GSE262028_S17_lib_data.csv.gz
+S25	Il13_reporter	N	pool.5	S25_Neg.fq.fastq.lib.output	GSE262028_S25_lib_data.csv.gz
+S25	Il13_reporter	P	pool.7	S25_Tp.fq.fastq.lib.output	GSE262028_S25_lib_data.csv.gz
+S31	Gata3_related_reporter	P	pool.4	S31_ILC2.fq.fastq.lib.output	GSE262028_S31_lib_data.csv.gz
+S31	Gata3_related_reporter	N	pool.6	S31_NK.fq.fastq.lib.output	GSE262028_S31_lib_data.csv.gz
+S35	Gata3_related_reporter	P	pool.1	S35_GATA3.fq.fastq.lib.output	GSE262028_S35_lib_data.csv.gz
+S35	Gata3_related_reporter	N	pool.4	S35_TBET.fq.fastq.lib.output	GSE262028_S35_lib_data.csv.gz

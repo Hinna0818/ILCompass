@@ -1,0 +1,50 @@
+[
+  {
+    "filename": "GSE262028_S17_lib_data.csv.gz",
+    "bytes": 192983,
+    "sha256": "0a30e00cf843834e7d6226d1c6ba476b25a577bf55914b4c1b36a807b30e7a5a",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE262nnn/GSE262028/suppl/GSE262028_S17_lib_data.csv.gz"
+  },
+  {
+    "filename": "GSE262028_S17_screen_list.csv.gz",
+    "bytes": 734,
+    "sha256": "b14815c47b98e73f09b4f9c00029d264cb56771cde3321753d2b9df59d2acb4d",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE262nnn/GSE262028/suppl/GSE262028_S17_screen_list.csv.gz"
+  },
+  {
+    "filename": "GSE262028_S25_lib_data.csv.gz",
+    "bytes": 195640,
+    "sha256": "333fd0c99d381d923135de7bb8ea57b5296c65cc56ea576548c133ed42cfc7fa",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE262nnn/GSE262028/suppl/GSE262028_S25_lib_data.csv.gz"
+  },
+  {
+    "filename": "GSE262028_S25_screen_list.csv.gz",
+    "bytes": 725,
+    "sha256": "f5fcc7a6128ee6752e865f93d250299f5f4d95fe1b4cde20b6e3dae13ace6f6f",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE262nnn/GSE262028/suppl/GSE262028_S25_screen_list.csv.gz"
+  },
+  {
+    "filename": "GSE262028_S31_lib_data.csv.gz",
+    "bytes": 194799,
+    "sha256": "0ff696dd561f132283c4d0d3f3d7499370c82cd1e3c81f3772b4753168b94d4b",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE262nnn/GSE262028/suppl/GSE262028_S31_lib_data.csv.gz"
+  },
+  {
+    "filename": "GSE262028_S31_screen_list.csv.gz",
+    "bytes": 720,
+    "sha256": "183e47dd0199bf4da5862cb0c8e0d610f0a391da720da67dc417581ead2efcf6",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE262nnn/GSE262028/suppl/GSE262028_S31_screen_list.csv.gz"
+  },
+  {
+    "filename": "GSE262028_S35_lib_data.csv.gz",
+    "bytes": 126984,
+    "sha256": "e994841756f1c93ae2f98f53f9445d42c8a5a372c0b6fba9ff4e9247d99b516e",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE262nnn/GSE262028/suppl/GSE262028_S35_lib_data.csv.gz"
+  },
+  {
+    "filename": "GSE262028_S35_screen_list.csv.gz",
+    "bytes": 428,
+    "sha256": "d6b1c8289857c254b7c72eb0fe706b92681ede57a8ae75536059d2a300eb5e58",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE262nnn/GSE262028/suppl/GSE262028_S35_screen_list.csv.gz"
+  }
+]

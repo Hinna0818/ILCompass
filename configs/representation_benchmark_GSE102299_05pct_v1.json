@@ -1,0 +1,11 @@
+{
+  "fewshot_config": "configs/film_combination_fewshot_GSE102299_v1.json",
+  "expression_reference_config": "configs/expression_film_GSE102299_rep1_05pct_v1.json",
+  "replicates": ["1", "2"],
+  "seeds": [0, 1, 2],
+  "fraction": 0.05,
+  "pca_dimensions": 384,
+  "pca_seed": 42,
+  "data_directory": "data/processed/GSE102299_rep12_05pct_representation_benchmark_v1",
+  "result_directory": "results/GSE102299_rep12_05pct_representation_benchmark_v1"
+}

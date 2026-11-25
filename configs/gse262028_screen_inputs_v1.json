@@ -1,0 +1,20 @@
+{
+  "source": "data/downstream_data/GSE262028",
+  "output": "data/processed/GSE262028_screen_inputs_v1",
+  "report": "results/GSE262028_screen_inputs_v1",
+  "annotation": "data/references/Mus_musculus.GRCm38.98.gtf.gz",
+  "author_min_count_each_bin": 50,
+  "exclude_cross_target_sequences": true,
+  "endpoints": {
+    "IL13": ["S17", "S25"],
+    "GATA3_lineage": ["S31", "S35"]
+  },
+  "geo_title_suffix": {
+    "IL13": {"N": "tom_neg", "P": "tom_pos"},
+    "GATA3_lineage": {"N": "TBET_pos", "P": "GATA3_pos"}
+  },
+  "interpretation": {
+    "IL13": "TOM-positive versus negative reporter populations; S17 negative pool filename is linn",
+    "GATA3_lineage": "GATA3/ILC2-associated versus TBET/NK-associated populations; not a pure mature-ILC2 expression contrast"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "readout_symbol": "Gata3",
+  "screen_endpoint": "GATA3_lineage",
+  "screens": ["S31", "S35"],
+  "screen_directory": "data/processed/GSE262028_screen_inputs_v1",
+  "reference_design": "compare_pretrain/model_compare/crispr_il13/design_v1/design.json",
+  "design_directory": "data/processed/GSE262028_GATA3_direction_v1",
+  "output_directory": "results/GSE262028_GATA3_direction_eval_v1",
+  "functional_panel": "data/processed/ILC2_GeneCompass_LoRA_v1/functional_panel.csv"
+}

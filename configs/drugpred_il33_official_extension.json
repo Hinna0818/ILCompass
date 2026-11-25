@@ -1,0 +1,8 @@
+{
+  "base_config": "configs/drugpred_il33_mixed_delta.json",
+  "version": "IL33_mixed_cell_delta_official_v1",
+  "data_directory": "data/processed/IL33_mixed_cell_delta_official_v1",
+  "result_directory": "results/IL33_mixed_cell_delta_official_v1",
+  "model_directory": "model/downstream/IL33_mixed_cell_delta_official_v1",
+  "checkpoint": "model/posttrained/base_last1_20261022_official_0.8_0.2"
+}

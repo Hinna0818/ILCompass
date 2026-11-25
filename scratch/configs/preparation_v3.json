@@ -1,0 +1,45 @@
+{
+  "dataset_version": "ilc2_scratch_v3",
+  "corpus": "scratch/data/pretrained_corpus/ILC2_four_tissue_v3.h5ad",
+  "output": "scratch/data/prepared/ilc2_scratch_v3",
+  "report": "scratch/results/ilc2_scratch_v3/preparation",
+  "condition_evidence": "results/ILC2_scratch_pretrained_corpus/distribution_audit/source_evidence.json",
+  "functional_panel": "results/ILC2_tissue_gene_exposure_v1/functional_gene_sets.csv",
+  "qc_version": "ilc2_balanced_v1",
+  "retain_all_cells": true,
+  "include_PBS_vehicle_controls": true,
+  "split_labels": [
+    "train",
+    "validation",
+    "test"
+  ],
+  "split_fractions": [
+    0.95,
+    0.025,
+    0.025
+  ],
+  "split_seed": 0,
+  "split_strata": "study|library_id|tissue|known_hash_id",
+  "gene_space": "intersection_of_source_feature_presence",
+  "library_size": "all_original_GEX_genes_before_vocabulary_selection",
+  "cp10k_target": 10000,
+  "median_fit": "Train_only_positive_CP10K",
+  "zero_positive_median_fallback": 1.0,
+  "low_support_positive_cells": 20,
+  "low_exposure_positive_cells": 5,
+  "idf_min": 1.0,
+  "idf_max": 4.0,
+  "mask_probability": 0.15,
+  "example_epochs": 30,
+  "pad_token_id": 0,
+  "mask_token_id": 1,
+  "first_gene_token_id": 2,
+  "parent_corpus": "scratch/data/pretrained_corpus/ILC2_steady_state_with_BM_v1.h5ad",
+  "parent_prepared": "scratch/data/prepared/ilc2_scratch_v03",
+  "tissues": [
+    "SI",
+    "Pancreas",
+    "Lung",
+    "BM"
+  ]
+}

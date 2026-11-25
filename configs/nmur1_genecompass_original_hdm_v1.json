@@ -1,0 +1,22 @@
+{
+  "source": "data/processed/GSE102299_qc/GSE102299_Nmur1_KO_ILC2.h5ad",
+  "checkpoint": "model/pretrained/GeneCompass_base",
+  "token_dictionary": "external/GeneCompass/scdata/dict/human_mouse_tokens.pickle",
+  "references": {
+    "released_default": "external/GeneCompass/scdata/dict/human_gene_median_after_filter.pickle",
+    "mouse_homolog_proxy": "data/references/mouse_gene_median.pickle"
+  },
+  "target": "ENSMUSG00000026237",
+  "symbol": "Nmur1",
+  "condition": "HDM",
+  "replicates": ["1", "2"],
+  "max_length": 2048,
+  "batch_size": 4,
+  "fractions": [0.5, 0.25, 0.0],
+  "random_deletions": 3,
+  "random_rank_window": 50,
+  "random_seed": 0,
+  "pairing_seeds": [0, 1, 2],
+  "data_directory": "data/processed/GSE102299_Nmur1_HDM_GeneCompass_original_v1",
+  "result_directory": "results/GSE102299_Nmur1_HDM_GeneCompass_original_v1"
+}

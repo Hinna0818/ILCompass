@@ -1,0 +1,45 @@
+[
+  {
+    "study": "GSE117567",
+    "classification": "steady_state_no_challenge",
+    "source": "data/metadata/GSE117567_sample_metadata.tsv",
+    "conclusion": "all five included libraries annotated steady-state",
+    "limitation": "GSE117567 is reporter-selected steady-state activated ILC2",
+    "original_source": "data/metadata/GSE117567_geo_metadata.json"
+  },
+  {
+    "study": "GSE153748",
+    "classification": "steady_state_no_challenge",
+    "source": "data/metadata/GSE153748_sample_metadata.tsv",
+    "conclusion": "all five included libraries annotated steady-state",
+    "limitation": "two pools/batches, ten mice per pool; not ten independent libraries per tissue"
+  },
+  {
+    "study": "GSE248385",
+    "source": "data/GSE248385_RAW/GSM7912851.soft.txt",
+    "classification": "steady_state_no_challenge",
+    "conclusion": "naive pancreatic ILC2",
+    "limitation": "sample condition evidence does not prove transcriptional quiescence"
+  },
+  {
+    "study": "GSE299900",
+    "source": "data/GSE299900_RAW/GSE299900_family.soft.txt",
+    "classification": "steady_state_no_challenge",
+    "conclusion": "uninfected, no cell transfer GEX libraries only",
+    "limitation": "sample condition evidence does not prove transcriptional quiescence"
+  },
+  {
+    "study": "GSE301975",
+    "source": "data/GSE301975_RAW/GSE301975_samples.soft.txt",
+    "classification": "steady_state_no_challenge",
+    "conclusion": "two naive WT control libraries",
+    "limitation": "sample condition evidence does not prove transcriptional quiescence"
+  },
+  {
+    "study": "GSE301976",
+    "source": "data/GSE301976_RAW/GSE301976_samples.soft.txt",
+    "classification": "PBS_vehicle_control",
+    "conclusion": "three WT PBS control libraries only",
+    "limitation": "vehicle handling differs from untreated; region/pool correspondence unresolved"
+  }
+]

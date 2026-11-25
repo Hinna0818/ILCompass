@@ -143,3 +143,12 @@ checkpoints/
 
 # ---------- 个人工作记录 ----------
 /docs/task_plan.md
+
+# Local model assets, study caches and backup archives
+/backup/
+*.zst
+/scratch/data/
+/scratch/results/
+/compare_pretrain/model_compare/gene_ko/results/
+/compare_pretrain/model_compare/crispr_il13/design_v1/
+/model/esm2_cache/

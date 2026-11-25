@@ -1,0 +1,11 @@
+{
+  "prepared": "scratch/data/prepared/ilc2_scratch_v03",
+  "output": "scratch/data/prepared/ilc2_scratch_v03/tokenized_shards_v1",
+  "report": "scratch/results/ilc2_scratch_v03/tokenization",
+  "cells_per_shard": 2048,
+  "encoding_batch_cells": 256,
+  "max_encoder_length": 8192,
+  "value_sample_probability": 0.01,
+  "value_sample_seed": 0,
+  "top_value_examples": 20
+}

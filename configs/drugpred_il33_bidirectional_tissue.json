@@ -1,0 +1,22 @@
+{
+  "base_config": "configs/drugpred_il33_external_delta.json",
+  "version": "GSE189285_IL33_bidirectional_delta_v1",
+  "data_directory": "data/processed/GSE189285_IL33_bidirectional_delta_v1",
+  "result_directory": "results/GSE189285_IL33_bidirectional_delta_v1",
+  "model_directory": "model/downstream/GSE189285_IL33_bidirectional_delta_v1",
+  "epochs": 100,
+  "minimum_learning_rate": 0.000001,
+  "lung_feature_cache": "data/processed/IL33_response_compare_v2",
+  "liver_feature_cache": "data/processed/IL33_lung_to_liver_classification_v1",
+  "liver_cache_provenance": "results/IL33_lung_to_liver_classification_v1/config.json",
+  "tissues": {
+    "Lung": {
+      "PBS": "src/downstream/drugpred/downstream_data/IL33_expanded_v1/external_test/input/external_input.h5ad",
+      "IL33": "src/downstream/drugpred/downstream_data/IL33_expanded_v1/external_test/sealed/external_target_sealed.h5ad"
+    },
+    "Liver": {
+      "PBS": "data/processed/GSE189285_qc/GSM5697024_ILC2.h5ad",
+      "IL33": "data/processed/GSE189285_qc/GSM5697022_ILC2.h5ad"
+    }
+  }
+}

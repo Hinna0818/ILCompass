@@ -1,0 +1,13 @@
+{
+  "source_configs": {
+    "C": "configs/film_combination_GSE136154_C_v1.json",
+    "D": "configs/film_combination_GSE136154_D_v1.json"
+  },
+  "fractions": [0.0, 0.01, 0.05, 0.10],
+  "holdout_fraction": 0.8,
+  "split_seed": 42,
+  "seed": 0,
+  "cpu_threads": 4,
+  "data_directory": "data/processed/GSE136154_FiLM_combination_fewshot_v1",
+  "result_directory": "results/GSE136154_FiLM_combination_fewshot_v1"
+}

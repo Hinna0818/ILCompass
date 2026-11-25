@@ -1,0 +1,9 @@
+accession	Sample_title	Sample_source_name_ch1	Sample_characteristics_ch1
+GSM8156255	S17_tom_neg	GFP+BFP+TOM- cells	screen: S17 | cell type: GFP+BFP+TOM- cells | sgrna library: Brie | genotype: Rosa26Cas9EGFP x Il13tdTom | sorted phenotype: Tom negative
+GSM8156256	S17_tom_pos	GFP+BFP+TOM+ cells	screen: S17 | cell type: GFP+BFP+TOM+ cells | sgrna library: Brie | genotype: Rosa26Cas9EGFP x Il13tdTom | sorted phenotype: Tom positive
+GSM8156257	S25_tom_neg	GFP+BFP+TOM- cells	screen: S25 | cell type: GFP+BFP+TOM- cells | sgrna library: Brie | genotype: Rosa26Cas9EGFP x Il13tdTom | sorted phenotype: Tom negative
+GSM8156258	S25_tom_pos	GFP+BFP+TOM+ cells	screen: S25 | cell type: GFP+BFP+TOM+ cells | sgrna library: Brie | genotype: Rosa26Cas9EGFP x Il13tdTom | sorted phenotype: Tom positive
+GSM8156259	S31_GATA3_pos	GFP+BFP+GATA3+ cells	screen: S31 | cell type: GFP+BFP+GATA3+ cells | sgrna library: Brie | genotype: Rosa26Cas9EGFP x Gata3hCD2 x Tbx21hCD4 x RorcKat mice | sorted phenotype: GATA3 negative
+GSM8156260	S31_TBET_pos	GFP+BFP+TBET+ cells	screen: S31 | cell type: GFP+BFP+TBET+ cells | sgrna library: Brie | genotype: Rosa26Cas9EGFP x Gata3hCD2 x Tbx21hCD4 x RorcKat mice | sorted phenotype: TBET positive
+GSM8156261	S35_GATA3_pos	GFP+BFP+GATA3+ cells	screen: S35 | cell type: GFP+BFP+GATA3+ cells | sgrna library: Brie | genotype: Rosa26Cas9EGFP x Gata3hCD2 x Tbx21hCD4 x RorcKat mice | sorted phenotype: GATA3 negative
+GSM8156262	S35_TBET_pos	GFP+BFP+TBET+ cells	screen: S35 | cell type: GFP+BFP+TBET+ cells | sgrna library: Brie | genotype: Rosa26Cas9EGFP x Gata3hCD2 x Tbx21hCD4 x RorcKat mice | sorted phenotype: TBET positive

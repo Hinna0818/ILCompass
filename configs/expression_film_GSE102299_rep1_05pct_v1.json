@@ -1,0 +1,6 @@
+{
+  "fewshot_config": "configs/film_combination_fewshot_GSE102299_v1.json",
+  "replicate": "1",
+  "fraction": 0.05,
+  "result_directory": "results/GSE102299_rep1_05pct_expression_vs_FM_v1"
+}

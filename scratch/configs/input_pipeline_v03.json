@@ -1,0 +1,13 @@
+{
+  "tokenized": "scratch/data/prepared/ilc2_scratch_v03/tokenized_shards_v1",
+  "report": "scratch/results/ilc2_scratch_v03/input_pipeline",
+  "fixed_eval_masks": "scratch/data/prepared/ilc2_scratch_v03/fixed_eval_masks_v1",
+  "batch_size": 4,
+  "bucket_size": 256,
+  "sampler_seed": 0,
+  "mask_seed": 0,
+  "mask_replacement_fraction": 0.8,
+  "random_replacement_fraction": 0.1,
+  "num_workers": 2,
+  "pin_memory": false
+}
